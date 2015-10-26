@@ -39,11 +39,7 @@ def starts_with_consonant? s
 end
 
 def binary_multiple_of_4? s
-
-  # s =~ /^[01]*1[01]*00$|[0]$/ 
   s =~ /^([01]*0)?0$/
-  # above does not work for case 0 
-  # s =~ /^([048]|[0-9]*([02468][048]|[13579][26]))$/i #why work? 
 end
   
 # Part 3
