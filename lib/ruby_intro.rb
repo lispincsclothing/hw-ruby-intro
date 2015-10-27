@@ -3,12 +3,14 @@
 # Part 1
 # 0. Define a method `sum(array)` that takes an array of integers as an argument and returns the sum of its elements. For an empty array it should return zero.
 def sum arr
-  return arr.empty? ? 0 : arr.inject(:+)
+  # return arr.empty? ? 0 : arr.inject(:+)
+  arr.inject(0, :+)
 end
 
 # 0. Define a method `max_2_sum(array)` which takes an array of integers as an argument and returns the sum of its two largest elements. For an empty array it should return zero. For an array with just one element, it should return that element.
 def max_2_sum arr
-  arr.empty? ? 0 : arr.sort.last(2).inject(:+)
+  # arr.empty? ? 0 : arr.sort.last(2).inject(:+)
+  arr.sort.last(2).inject(0, :+)
 end
 
 # 0. Define a method `sum_to_n?(array)` that takes an array of integers and an additional integer, n, as arguments and returns true if any two elements in the array of integers sum to n. An empty array should sum to zero by definition.
